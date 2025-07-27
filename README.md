@@ -9,13 +9,18 @@
 ✅ Tests traffic routing and connectivity from VMs
 
 ## 🏗️ Project structure
-terraform-build/
-    ├── main.tf             # Main resources: VPC, VMs, NAT, etc.
-    ├── psc.tf              # PSC endpoint and global address
-    ├── dns.tf              # DNS zone and records
-    ├── variables.tf        # Input variables
-    ├── outputs.tf          # Outputs (if needed)
-    └── versions.tf         # Terraform provider versions
+
+| File           | Description                                   |
+| -------------- | --------------------------------------------- |
+| `main.tf`      | Main resources: VPC, VMs, NAT, firewall, etc. |
+| `psc.tf`       | PSC endpoint and global internal address      |
+| `dns.tf`       | Private DNS zone and A/CNAME records          |
+| `variables.tf` | Input variables                               |
+| `outputs.tf`   | Outputs after apply (e.g., VM IPs)            |
+| `versions.tf`  | Terraform & provider version constraints      |
+
+
+
 
 ## 🚀 How to use
 
